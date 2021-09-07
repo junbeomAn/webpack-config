@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DotenvWebpackPlugin = require('dotenv-webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
     filename: 'index.js'
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx'],
     alias: {
       '@': path.resolve(__dirname, '../src')
     }
